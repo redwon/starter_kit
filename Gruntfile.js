@@ -129,6 +129,21 @@ module.exports = function(grunt) {
       },
     },
 
+    // минификация JS
+    uglify: {
+      options: {
+        mangle: false
+      },
+      my_target: {
+        files: [{
+          expand: true,
+          cwd: 'build/js',
+          src: '**/*.js',
+          dest: 'build/js'
+        }]
+      }
+    },
+
     // слежение за файлами
     watch: {
       // перезагрузка? да, детка!
@@ -247,6 +262,7 @@ module.exports = function(grunt) {
     'concat:js',
     'copy:js',
     'copy:font',
+    'uglify',
     'includereplace:html',
   ]);
 
