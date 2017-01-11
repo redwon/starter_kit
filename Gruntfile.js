@@ -144,6 +144,22 @@ module.exports = function(grunt) {
       }
     },
 
+    // оптимизация изображений
+    imagemin: {
+      static: {
+        options: {
+          optimizationLevel: 3,
+          svgoPlugins: [{ removeViewBox: false }],
+        },
+        files: [{
+          expand: true,
+          cwd: 'build/img/',
+          src: ['**/*.{png,jpg,gif,svg}'],
+          dest: 'build/img/'
+        }]
+      },
+    },
+
     // слежение за файлами
     watch: {
       // перезагрузка? да, детка!
@@ -259,6 +275,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'style',
     'img',
+    'imagemin',
     'concat:js',
     'copy:js',
     'copy:font',
