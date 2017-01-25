@@ -24,3 +24,12 @@
 	right: 0;
 	margin: auto;
 }
+
+// Media Queries
+@mixin min-w($width) {
+  @media screen and (min-width: $width) { @content; }
+}
+
+@mixin max-w($width) {
+  @media screen and (max-width: $width) { @content; }
+}
