@@ -37,6 +37,8 @@
 
 `grunt img` — копирование картинок в папку build/img.
 
+`grunt sprite` — сборка спрайта, картинки беруться с папки src/img/sprites/.
+
 `grunt font` — копирование шрифтов в папку build/fonts.
 
 `grunt concat:css` — склеивает файлы из папки src/css_lib в файл css/css_lib.css
