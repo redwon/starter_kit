@@ -16,6 +16,7 @@
     "grunt-include-replace": "^5.0.0",
     "grunt-postcss": "^0.8.0",
     "grunt-sass": "^2.0.0",
+    "grunt-spritesmith": "^6.4.0",
     "load-grunt-tasks": "^3.3.0"
   }
 }

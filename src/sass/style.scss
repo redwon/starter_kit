@@ -4,7 +4,9 @@
 				
 @import		'variables',
 					'mixin',
-					'global_scaffolding';
+					'global',
+					'sprites',
+					'elements';
 
 @import   'block/header',
 					'block/footer';

@@ -160,9 +160,21 @@ module.exports = function(grunt) {
       },
     },
 
+    // генератор спрайтов
+    sprite: {
+      all: {
+        src: 'src/img/sprites/*.png',
+        imgPath: '../img/spritesheet.png',
+        padding: 2,
+        dest: 'src/img/spritesheet.png',
+        destCss: 'src/sass/_sprites.scss',
+        cssFormat: 'css'
+      }
+    },
+
     // слежение за файлами
     watch: {
-      // перезагрузка? да, детка!
+      // перезагрузка в браузере
       livereload: {
         options: { livereload: true },
         files: ['build/**/*'],
