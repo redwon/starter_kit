@@ -1,15 +1,15 @@
 {
   "name": "starter_kit",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "devDependencies": {
-    "autoprefixer": "^6.6.0",
+    "autoprefixer": "^7.0.1",
     "grunt": "^1.0.1",
     "grunt-browser-sync": "^2.0.0",
     "grunt-combine-media-queries": "^1.0.19",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-cssmin": "^2.1.0",
     "grunt-contrib-imagemin": "^1.0.1",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",

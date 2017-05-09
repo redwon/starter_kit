@@ -4,18 +4,15 @@ build/img
 build/js
 build/*.html
 
-_design/
-.Saved/
-_arc/
-bower_components/
 node_modules/
+bower_components/
+_design/
+_arc/
+.idea
 .DS_Store
+.Saved/
 *.log
 *.sublime-*
 *.rar
 *.txt
 *.zip
-.idea
-css/*.css
-ex_files
-Thumbs.db

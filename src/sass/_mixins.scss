@@ -1,6 +1,4 @@
-//------------------------------------------------------------------------------
 //  Миксины
-//------------------------------------------------------------------------------
 
 @mixin clearfix {
   &::after {
@@ -25,10 +23,13 @@
 	margin: auto;
 }
 
-// Media Queries
+// Media Queries Min Width
+
 @mixin min-w($width) {
   @media screen and (min-width: $width) { @content; }
 }
+
+// Media Queries Max Width
 
 @mixin max-w($width) {
   @media screen and (max-width: $width) { @content; }
