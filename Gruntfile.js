@@ -98,12 +98,12 @@ module.exports = function(grunt) {
     // конкатенация файлов
     concat: {
       css: {
-        src: ['src/_css_lib/*.css'],
-        dest: 'build/css/lib.css',
+        src: ['src/_load-styles/*.css'],
+        dest: 'build/css/load-styles.css',
       },
       js: {
-        src: ['src/_js_lib/*.js'],
-        dest: 'build/js/lib.js',
+        src: ['src/_load-scripts/*.js'],
+        dest: 'build/js/load-scripts.js',
       },
     },
 
